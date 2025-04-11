@@ -30,6 +30,18 @@ void lcd_backlight_update(int v) {
   reg_set_value(REG_ID_BKL,val);
 }
 
+void kbd_backlight_update_reg() {
+
+  uint8_t val;
+
+  val = reg_get_value(REG_ID_BK2);
+  val = val & 0xff;
+  
+  analogWriteFrequency(10000); 
+  analogWrite(PC8, val);  
+
+}
+
 void kbd_backlight_update(int v){
   int val;
 

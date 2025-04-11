@@ -135,6 +135,12 @@ void receiveEvent(int howMany) {
       write_buffer[0] = reg;
       write_buffer[1] = reg_get_value(REG_ID_BKL);
     } break;
+    case REG_ID_BK2: {
+      reg_set_value(REG_ID_BK2, rcv_data[1]);
+      kbd_backlight_update_reg();
+      write_buffer[0] = reg;
+      write_buffer[1] = reg_get_value(REG_ID_BK2);
+    } break;
     case REG_ID_BAT:{
       //Serial1.print("REG_ID_BAT getBatteryPercent:");Serial1.print(current_bat_pcnt);Serial1.println("%");
       write_buffer[0] = reg;
