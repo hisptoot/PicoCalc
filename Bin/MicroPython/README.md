@@ -15,11 +15,11 @@ Follow the readme to
 - Flash firmware and upload python code through Thonny IDE. 
 - Compile custom micropython firmware for picocalc.
 
-
+---------   
 Here is the Sequence for beginners to run python on Pico with PicoCalc:  
 
 1. Put pico into BOOTSEL mode.
-2. Flash correct firmware uf2 file included all necessary python module.
+2. Flash correct firmware uf2 file included all necessary python modules.
 3. Open Thonny at the mean time, config Interpreter with correct kind and port (usuall /dev/ttyACM0 on linux).  
 4. Upload main.py( this is the entry boot up python file) and other py files to /. from left sidebar.
 5. Do nothing but wait for uploading finished,then unplug the Micro-usb cable from pico.
