@@ -10,3 +10,6 @@
 [submodule "Code/picocalc_kbd_tester/uthash"]
 	path = Code/picocalc_kbd_tester/uthash
 	url = https://github.com/troydhanson/uthash.git
+[submodule "Bin/MicroPython/PicoCalc-micropython-driver"]
+	path = Bin/MicroPython/PicoCalc-micropython-driver
+	url = https://github.com/zenodante/PicoCalc-micropython-driver.git
